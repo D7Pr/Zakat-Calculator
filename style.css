@@ -2,132 +2,111 @@ body {
     font-weight: bold;
     background: linear-gradient(14deg, #68988b, #7fc5b2, #7f8dc5, #877fc5, #a4b258, #ccaf54, #cc8a54, #cc6a54);
     background-size: 400% 400%;
-
     -webkit-animation: AnimationName 16s ease infinite;
     -moz-animation: AnimationName 16s ease infinite;
     animation: AnimationName 16s ease infinite;
 }
-
 @-webkit-keyframes AnimationName {
     0% {
-        background-position: 0% 44%
-    }
+        background-position: 0% 44% 
+   }
     50% {
-        background-position: 100% 57%
-    }
+        background-position: 100% 57% 
+   }
     100% {
-        background-position: 0% 44%
-    }
+        background-position: 0% 44% 
+   }
 }
-
 @-moz-keyframes AnimationName {
     0% {
-        background-position: 0% 44%
-    }
+        background-position: 0% 44% 
+   }
     50% {
-        background-position: 100% 57%
-    }
+        background-position: 100% 57% 
+   }
     100% {
-        background-position: 0% 44%
-    }
+        background-position: 0% 44% 
+   }
 }
-
 @keyframes AnimationName {
     0% {
-        background-position: 0% 44%
-    }
+        background-position: 0% 44% 
+   }
     50% {
-        background-position: 100% 57%
-    }
+        background-position: 100% 57% 
+   }
     100% {
-        background-position: 0% 44%
-    }
+        background-position: 0% 44% 
+   }
 }
-
 .container {
     font-size: 20px;
     width: 100%;
     max-width: 1320px;
     margin: auto;
     -webkit-animation: slide-in-bck-center 3s both;
-    animation: slide-in-bck-center 3s both
+    animation: slide-in-bck-center 3s both 
 }
-
 article {
     width: 80%;
     float: right;
 }
-
 article p {
     font-size: larger;
 }
-
 aside {
     width: 20%;
     float: left;
     font-size: larger;
 }
-
 .zakah-table {
     border-radius: 5px;
     margin: auto;
     font-size: larger;
 }
-
 td {
     border-radius: 5px;
 }
-
 input {
     border: 1px solid gray;
     border-radius: 5px;
 }
-
 .calculate-btn {
     color: green;
     border: 1px solid green;
     border-radius: 5px;
     font-size: 17px;
 }
-
 .calculate-btn:hover {
     box-shadow: 0 0 8px green;
 }
-
 .reset-btn {
     color: red;
     border: 1px solid red;
     border-radius: 5px;
     font-size: 17px;
 }
-
 .reset-btn:hover {
     box-shadow: 0 0 8px red;
     -webkit-animation: vibrate-1 0.1s linear infinite both;
-    animation: vibrate-1 0.1s linear infinite both
+    animation: vibrate-1 0.1s linear infinite both 
 }
-
 option {
     border-radius: 5px;
 }
-
 h1 {
     text-align: center;
 }
-
 input {
     font-size: 19px;
 }
-
 input:hover {
     background-color: rgb(226, 248, 248);
 }
-
 select {
     font-size: 19px;
     border-radius: 5px;
 }
-
 .sitenavigation a:link {
     color: black;
     text-decoration: none;
@@ -139,234 +118,279 @@ select {
 .sitenavigation a:hover {
     text-shadow: 0 0 5px lightgreen;
 }
-
 .sitenavigation a:visited {
-    color: rgb(192, 74, 74)
+    color: rgb(192, 74, 74) 
 }
-
 .sitenavhead {
     display: none;
 }
-
 .sitenavhead a:link {
     color: black;
     text-decoration: none;
 }
-
 .sitenavhead a:hover {
     text-shadow: 0 0 5px lightgreen;
 }
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.calculator {
+    margin-top: .5em;
+    padding: 5px;
+    border-radius: 1em;
+    height: 250px;
+    width: 200px;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 50%;
+}
+#btn {
+    background-color: #fb0066;
+}
+#btn1 {
+    background-color: #fb0066;
+}
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+.inner {
+    position: relative;
+    overflow: hidden;
+}
+.hide2 {
+    width: 100%;
+    opacity: 1;
+    overflow: hidden;
+    transform: translateY(0);
+    margin: 0;
+    transition: all 1s linear, margin 0s linear 0s;
+}
+.ex2 input[type="checkbox"]:not(:checked) + .inner .hide2 {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 1s linear, margin 0s linear 1s;
+}
+label{
+    margin-top:-1em ;
+    font-size: smaller;
+}
 @media (max-width: 800px) {
     h1 {
         font-size: 3rem;
-    }
+   }
     article {
         float: left;
         width: 100%;
-    }
+   }
     article h2 {
         text-align: center;
-    }
+   }
     article p {
         text-align: center;
         font-size: smaller;
-    }
+   }
     aside {
         display: none;
         width: 0%;
-    }
+   }
     .zakah-table {
         border-radius: 5px;
         font-size: smaller;
-    }
+   }
     input {
         font-size: 13px;
-    }
+   }
     .sitenavhead {
         display: inline-block;
         text-align: center;
-    }
+   }
     .sitenavhead p {
         display: inline-block;
         margin: .5em;
         font-size: 23px;
-    }
+   }
     select {
         font-size: 13px;
         border-radius: 5px;
-    }
+   }
     .headsvg {
         display: none;
-    }
+   }
     .navi {
         text-align: center;
-    }
-
+   }
+    .ex2{
+        display: block;
+   }
 }
-
 @-webkit-keyframes bg-pan-left {
     0% {
-        background-position: 100% 50%
-    }
+        background-position: 100% 50% 
+   }
     100% {
-        background-position: 0 50%
-    }
+        background-position: 0 50% 
+   }
 }
-
 @keyframes bg-pan-left {
     0% {
-        background-position: 100% 50%
-    }
+        background-position: 100% 50% 
+   }
     100% {
-        background-position: 0 50%
-    }
+        background-position: 0 50% 
+   }
 }
-
 @-webkit-keyframes text-shadow-drop-tl {
     0% {
-        text-shadow: 0 0 0 transparent
-    }
+        text-shadow: 0 0 0 transparent 
+   }
     100% {
-        text-shadow: -6px -6px 18px rgba(0, 0, 0, .35)
-    }
+        text-shadow: -6px -6px 18px rgba(0, 0, 0, .35) 
+   }
 }
-
 @keyframes text-shadow-drop-tl {
     0% {
-        text-shadow: 0 0 0 transparent
-    }
+        text-shadow: 0 0 0 transparent 
+   }
     100% {
-        text-shadow: -6px -6px 18px rgba(0, 0, 0, .35)
-    }
+        text-shadow: -6px -6px 18px rgba(0, 0, 0, .35) 
+   }
 }
-
 @-webkit-keyframes fade-in {
     0% {
-        opacity: 0
-    }
+        opacity: 0 
+   }
     100% {
-        opacity: 1
-    }
+        opacity: 1 
+   }
 }
-
 @keyframes fade-in {
     0% {
-        opacity: 0
-    }
+        opacity: 0 
+   }
     100% {
-        opacity: 1
-    }
+        opacity: 1 
+   }
 }
-
 @-webkit-keyframes slide-in-bck-center {
     0% {
         -webkit-transform: translateZ(600px);
         transform: translateZ(600px);
-        opacity: 0
-    }
+        opacity: 0 
+   }
     100% {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
-        opacity: 1
-    }
+        opacity: 1 
+   }
 }
-
 @keyframes slide-in-bck-center {
     0% {
         -webkit-transform: translateZ(600px);
         transform: translateZ(600px);
-        opacity: 0
-    }
+        opacity: 0 
+   }
     100% {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
-        opacity: 1
-    }
+        opacity: 1 
+   }
 }
-
 @-webkit-keyframes kenburns-top {
     0% {
         -webkit-transform: scale(1) translateY(0);
         transform: scale(1) translateY(0);
         -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%
-    }
+        transform-origin: 50% 16% 
+   }
     100% {
         -webkit-transform: scale(1.25) translateY(-15px);
         transform: scale(1.25) translateY(-15px);
         -webkit-transform-origin: top;
-        transform-origin: top
-    }
+        transform-origin: top 
+   }
 }
-
 @keyframes kenburns-top {
     0% {
         -webkit-transform: scale(1) translateY(0);
         transform: scale(1) translateY(0);
         -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%
-    }
+        transform-origin: 50% 16% 
+   }
     100% {
         -webkit-transform: scale(1.25) translateY(-15px);
         transform: scale(1.25) translateY(-15px);
         -webkit-transform-origin: top;
-        transform-origin: top
-    }
+        transform-origin: top 
+   }
 }
-
 @-webkit-keyframes vibrate-1 {
     0% {
         -webkit-transform: translate(0);
-        transform: translate(0)
-    }
+        transform: translate(0) 
+   }
     20% {
         -webkit-transform: translate(-2px, 2px);
-        transform: translate(-2px, 2px)
-    }
+        transform: translate(-2px, 2px) 
+   }
     40% {
         -webkit-transform: translate(-2px, -2px);
-        transform: translate(-2px, -2px)
-    }
+        transform: translate(-2px, -2px) 
+   }
     60% {
         -webkit-transform: translate(2px, 2px);
-        transform: translate(2px, 2px)
-    }
+        transform: translate(2px, 2px) 
+   }
     80% {
         -webkit-transform: translate(2px, -2px);
-        transform: translate(2px, -2px)
-    }
+        transform: translate(2px, -2px) 
+   }
     100% {
         -webkit-transform: translate(0);
-        transform: translate(0)
-    }
+        transform: translate(0) 
+   }
 }
-
 @keyframes vibrate-1 {
     0% {
         -webkit-transform: translate(0);
-        transform: translate(0)
-    }
+        transform: translate(0) 
+   }
     20% {
         -webkit-transform: translate(-2px, 2px);
-        transform: translate(-2px, 2px)
-    }
+        transform: translate(-2px, 2px) 
+   }
     40% {
         -webkit-transform: translate(-2px, -2px);
-        transform: translate(-2px, -2px)
-    }
+        transform: translate(-2px, -2px) 
+   }
     60% {
         -webkit-transform: translate(2px, 2px);
-        transform: translate(2px, 2px)
-    }
+        transform: translate(2px, 2px) 
+   }
     80% {
         -webkit-transform: translate(2px, -2px);
-        transform: translate(2px, -2px)
-    }
+        transform: translate(2px, -2px) 
+   }
     100% {
         -webkit-transform: translate(0);
-        transform: translate(0)
-    }
+        transform: translate(0) 
+   }
 }
