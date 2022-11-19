@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
   <link rel="shortcut icon" href="zakat.ico">
   <link rel="apple-touch-icon" href="zakat.png">
   <link rel="icon" href="zakat.png">
   <link rel="stylesheet" href="style.css">
+  <title>Zakat Calculator</title>
  </head>
  <body>
   <div class="container">
-    <header>
-      <h1>Zakat Calculator</h1>
-      <h2 class="headsvg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(226, 248, 248)" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,149.3C384,117,480,107,576,112C672,117,768,139,864,170.7C960,203,1056,245,1152,234.7C1248,224,1344,160,1392,128L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg></h2>
-      <h2 class="navi">
-        <nav class="sitenavhead">
-        <p><a href="ZakatCalculator.html">Home</a></p>
-        <p ><a href="zakat.html">Zakat</a></p>
-        <p ><a href="about.html">About</a></p>
-      </nav>
+   <header>
+    <h1>Zakat Calculator</h1>
+    <h2 class="headsvg">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="rgb(226, 248, 248)" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,149.3C384,117,480,107,576,112C672,117,768,139,864,170.7C960,203,1056,245,1152,234.7C1248,224,1344,160,1392,128L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+     </svg>
     </h2>
-    </header>
+    <h2 class="navi">
+     <nav class="sitenavhead">
+      <p>
+       <a href="ZakatCalculator.html">Home</a>
+      </p>
+      <p>
+       <a href="about.html">About</a>
+      </p>
+     </nav>
+    </h2>
+   </header>
    <article>
     <h2 class="fade-in">Zakat</h2>
     <p class="fade-in">Zakat is the third pillar of Islam, and the most important financial act of all. Therefore, it is repeated in the Holy Qur’an, and God has associated it with prayer in more than eighty places. It is one of the most important pillars that distinguish Muslim society from others, and it is a manifestation of the supremacy of Islamic legislation. With what it represents of an effective means to fight poverty and alleviate the suffering of the needy, and this leads to the achievement of social solidarity.</p>
-   </br>
-  <p>This calculator enables you to calculate Zakat</p>
+    </br>
+    <p>This calculator enables you to calculate Zakat</p>
     <table class="zakah-table">
      <tbody>
       <tr>
@@ -292,13 +300,98 @@
    </article>
    <aside>
     <nav class="sitenavigation">
-      <p><a href="ZakatCalculator.html">Home</a></p>
-      <p ><a href="zakat.html">Zakat</a></p>
-      <p ><a href="about.html">About</a></p>
+     <p>
+      <a href="ZakatCalculator.html">Home</a>
+     </p>
+     <p>
+      <a href="about.html">About</a>
+     </p>
     </nav>
-  </aside>
-   <footer><p class="headsvg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(226, 248, 248)" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,149.3C384,117,480,107,576,112C672,117,768,139,864,170.7C960,203,1056,245,1152,234.7C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg></p></footer>
+    <div class="ex2">
+     <label for="item-2">Simple Calculator</label>
+     <br>
+     <input type="checkbox" name="rwo" id="item-2">
+     <div class="inner">
+      <div class="hide2">
+       <table class="calculator">
+        <tr>
+         <td colspan="3">
+          <input class="display-box" type="text" id="result" disabled />
+         </td>
+         <td>
+          <input type="button" value="C" onclick="clearScreen()" id="btn" />
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <input type="button" value="1" onclick="display('1')" />
+         </td>
+         <td>
+          <input type="button" value="2" onclick="display('2')" />
+         </td>
+         <td>
+          <input type="button" value="3" onclick="display('3')" />
+         </td>
+         <td>
+          <input type="button" value="/" onclick="display('/')" />
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <input type="button" value="4" onclick="display('4')" />
+         </td>
+         <td>
+          <input type="button" value="5" onclick="display('5')" />
+         </td>
+         <td>
+          <input type="button" value="6" onclick="display('6')" />
+         </td>
+         <td>
+          <input type="button" value="-" onclick="display('-')" />
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <input type="button" value="7" onclick="display('7')" />
+         </td>
+         <td>
+          <input type="button" value="8" onclick="display('8')" />
+         </td>
+         <td>
+          <input type="button" value="9" onclick="display('9')" />
+         </td>
+         <td>
+          <input type="button" value="+" onclick="display('+')" />
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <input type="button" value="." onclick="display('.')" />
+         </td>
+         <td>
+          <input type="button" value="0" onclick="display('0')" />
+         </td>
+         <td>
+          <input type="button" value="=" onclick="calculate()" id="btn1" />
+         </td>
+         <td>
+          <input type="button" value="*" onclick="display('*')" />
+         </td>
+        </tr>
+       </table>
+      </div>
+     </div>
+    </div>
+   </aside>
+   <footer>
+    <p class="headsvg">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="rgb(226, 248, 248)" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,149.3C384,117,480,107,576,112C672,117,768,139,864,170.7C960,203,1056,245,1152,234.7C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+     </svg>
+    </p>
+   </footer>
    <script type="text/javascript" src="ZakatCalculator.js"></script>
+   <script type="text/javascript" src="calc.js"></script>
   </div>
  </body>
 </html>
