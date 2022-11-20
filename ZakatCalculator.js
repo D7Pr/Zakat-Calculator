@@ -51,9 +51,8 @@ function getOption() {
 
 function resetAllInputFields() {
   var valueFields = document.getElementsByClassName("value-field");
-  for (var i = 1; i < valueFields.length; i++) {
+  for (var i = 0; i < valueFields.length; i++) {
     valueFields[i].value = "";
     valueFields[i].innerHTML = "";
   }
 }
-
